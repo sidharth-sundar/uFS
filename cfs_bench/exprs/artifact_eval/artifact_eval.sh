@@ -25,14 +25,14 @@ fi
 # a env var that will be exported should have a prefix "AE_" to avoid conflicts
 ## source code repository
 if [ -z "$AE_REPO_URL" ]; then
-	export AE_REPO_URL='https://github.com/WiscADSL/uFS.git'
+	export AE_REPO_URL='https://github.com/sidharth-sundar/uFS.git'
 fi
 if [ -z "$AE_BRANCH" ]; then
 	export AE_BRANCH='main'
 fi
 ## benchmark code repository
 if [ -z "$AE_BENCH_REPO_URL" ]; then
-	export AE_BENCH_REPO_URL='https://github.com/WiscADSL/uFS-bench.git'
+	export AE_BENCH_REPO_URL='https://github.com/sidharth-sundar/uFS-bench.git'
 fi
 if [ -z "$AE_BENCH_BRANCH" ]; then
 	export AE_BENCH_BRANCH='main'
@@ -48,7 +48,7 @@ if [ -z "$AE_EXT4_WAIT_AFTER_MOUNT" ]; then
 fi
 
 ## workspace
-export AE_WORK_DIR="$HOME/workspace"
+export AE_WORK_DIR="$HOME/ssd/workspace"
 export AE_REPO_DIR="$AE_WORK_DIR/uFS"
 export AE_BENCH_REPO_DIR="$AE_WORK_DIR/uFS-bench"
 export AE_SCRIPT_DIR="$AE_REPO_DIR/cfs_bench/exprs/artifact_eval"
